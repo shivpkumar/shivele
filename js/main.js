@@ -178,9 +178,9 @@ VEGAS Home Slider
     $.vegas('slideshow', {
         backgrounds:[
         
-        { src:'img/backgrounds/1.jpg', fade:1000 },
-        { src:'img/backgrounds/2.jpg', fade:1000 },
-        { src:'img/backgrounds/3.jpg', fade:1000 }
+        { src:'img/backgrounds/shiv_michele_roof.jpg', fade:1000 },
+        { src:'img/backgrounds/shiv_michele_big_sur.jpg', fade:1000 },
+        { src:'img/backgrounds/shiv_michele_kauai.jpg', fade:1000 }
         ]
       })('overlay', {
         src:'img/overlays/16.png'
@@ -223,14 +223,30 @@ Contact form
 /*==========================================================================
 Count to timer
 ========================================================================== */ 
+var untilOrSince = null;
+var todayDate = new Date();
+var weddingDate = new Date(2015, 8-1, 15, 10);
 
- $('.counter').waypoint(function() {
-    $(this).countTo();
-     }, {
-     triggerOnce: true,
-     offset: 'bottom-in-view'
-});       
-         
+if (todayDate < weddingDate) {
+  $('#countdown').countdown({
+    until: weddingDate,
+    format: 'ODHMS',
+    layout: '<div class="row"><div class="col-md-2"><div class="count">{o<}<div class="counter">{on}</div>{o>}<h3>Months</h3></div></div><div class="col-md-3"><div class="count">{d<}<div class="counter">{dn}</div>{d>}<h3>Days</h3></div></div><div class="col-md-2"><div class="count">{h<}<div class="counter">{hn}</div>{h>}<h3>Hours</h3></div></div><div class="col-md-3"><div class="count">{m<}<div class="counter">{mn}</div>{m>}<h3>Minutes</h3></div></div><div class="col-md-2"><div class="count">{s<}<div class="counter">{sn}</div>{s>}<h3>Seconds</h3></div></div></div>'
+  });
+} else {
+  $('#countdown').countdown({
+    since: weddingDate,
+    format: 'ODHMS',
+    layout: '<div class="row"><div class="col-md-2"><div class="count">{o<}<div class="counter">-{on}</div>{o>}<h3>Months</h3></div></div><div class="col-md-3"><div class="count">{d<}<div class="counter">-{dn}</div>{d>}<h3>Days</h3></div></div><div class="col-md-2"><div class="count">{h<}<div class="counter">-{hn}</div>{h>}<h3>Hours</h3></div></div><div class="col-md-3"><div class="count">{m<}<div class="counter">-{mn}</div>{m>}<h3>Minutes</h3></div></div><div class="col-md-2"><div class="count">{s<}<div class="counter">-{sn}</div>{s>}<h3>Seconds</h3></div></div></div>'
+  });
+}
+
+
+$('#countdown').countdown({
+  until: new Date(2015, 8-1, 15, 10),
+  format: 'ODHMS',
+  layout: '<div class="row"><div class="col-md-2"><div class="count">{o<}<div class="counter">{on}</div>{o>}<h3>Months</h3></div></div><div class="col-md-3"><div class="count">{d<}<div class="counter">{dn}</div>{d>}<h3>Days</h3></div></div><div class="col-md-2"><div class="count">{h<}<div class="counter">{hn}</div>{h>}<h3>Hours</h3></div></div><div class="col-md-3"><div class="count">{m<}<div class="counter">{mn}</div>{m>}<h3>Minutes</h3></div></div><div class="col-md-2"><div class="count">{s<}<div class="counter">{sn}</div>{s>}<h3>Seconds</h3></div></div></div>'
+}); 
                    
 
 });
