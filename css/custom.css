@@ -274,6 +274,8 @@ a.book:hover{
 .planContainer .photo {
   height: 260px;
   border-radius: 0 0 5px 5px !important;
+  background-position: center;
+  background-size: cover;
 }
 
 #plan1 .planContainer .photo {
