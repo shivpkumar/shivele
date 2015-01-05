@@ -279,15 +279,15 @@ a.book:hover{
 }
 
 #plan1 .planContainer .photo {
-  background-image: url(../img/registry/crateandbarrel.jpg);
+  background-image: url(../images/registry/crateandbarrel.jpg);
 }
 
 #plan2 .planContainer .photo {
-  background-image: url(../img/registry/macys.jpg); 
+  background-image: url(../images/registry/macys.jpg); 
 }
 
 #plan3 .planContainer .photo {
-  background-image: url(../img/registry/honeyfund.jpg); 
+  background-image: url(../images/registry/honeyfund.jpg); 
 }
 
 .planContainer .photo a {

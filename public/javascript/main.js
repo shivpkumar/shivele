@@ -178,12 +178,12 @@ VEGAS Home Slider
     $.vegas('slideshow', {
         backgrounds:[
         
-        { src:'img/backgrounds/shiv_michele_roof.jpg', fade:1000 },
-        { src:'img/backgrounds/shiv_michele_big_sur.jpg', fade:1000 },
-        { src:'img/backgrounds/shiv_michele_kauai.jpg', fade:1000 }
+        { src:'images/backgrounds/shiv_michele_roof.jpg', fade:1000 },
+        { src:'images/backgrounds/shiv_michele_big_sur.jpg', fade:1000 },
+        { src:'images/backgrounds/shiv_michele_kauai.jpg', fade:1000 }
         ]
       })('overlay', {
-        src:'img/overlays/16.png'
+        src:'images/overlays/16.png'
       });
       $( "#vegas-next" ).click(function() {
         $.vegas('next');

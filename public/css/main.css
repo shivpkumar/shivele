@@ -274,7 +274,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .parallax-background1 {
-  background-image: url(../img/backgrounds/spinning_flowers.jpg);
+  background-image: url(../images/backgrounds/spinning_flowers.jpg);
 }
 
 
@@ -305,7 +305,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .overlay {
-  background: url(../img/overlays/05.png);
+  background: url(../images/overlays/05.png);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -314,7 +314,7 @@ h1,h2,h3,h4,h5,h6{
 
 
 .parallax-background2 {
-  background-image: url(../img/backgrounds/flower_garlands.jpg);
+  background-image: url(../images/backgrounds/flower_garlands.jpg);
 }
 
 #parallax-connect .parallax-content{
@@ -943,7 +943,7 @@ html[xmlns] .slides {display: block;}
 
 
 .vegas-overlay {
-    background: transparent url(../img/overlays/16.png);
+    background: transparent url(../images/overlays/16.png);
     opacity: 0.5;
     z-index: -1;
 }
@@ -993,13 +993,13 @@ html[xmlns] .slides {display: block;}
         cursor: pointer;
 }
 .next{
-    background: url("../img/next.png");
+    background: url("../images/next.png");
     margin-right: 70px;
     right: 0;
     opacity: 0.3;
 }
 .prev{
-    background: url("../img/prev.png");
+    background: url("../images/prev.png");
     margin-left: 70px;
     left: 0;
     opacity: 0.3;
