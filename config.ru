@@ -9,4 +9,6 @@ end
 
 set :protection, except: :frame_options
 
+use Rack::Deflater
+
 run Sinatra::Application
