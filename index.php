@@ -1,1 +1,9 @@
-<?php include_once('home.html'); ?>
+<?php
+
+use indexed\Robots;
+$robots = new Robots();
+$robots->disallow('/admin');
+
+include_once('home.html');
+
+?>
