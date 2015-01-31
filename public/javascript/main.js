@@ -225,7 +225,7 @@ Count to timer
 ========================================================================== */
 var untilOrSince = null;
 var todayDate = new Date();
-var weddingDate = new Date(2015, 8-1, 15, 10);
+var weddingDate = new Date(2015, 8-1, 14, 19);
 
 if (todayDate < weddingDate) {
   $('#countdown').countdown({
