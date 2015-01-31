@@ -17,3 +17,6 @@ get '/' do
   send_file 'views/index.html'
 end
 
+post '/' do
+  Email.create(address: params[:email])
+end

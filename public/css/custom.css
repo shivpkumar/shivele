@@ -317,3 +317,20 @@ a.disabled, a.disabled:hover {
 a.registry {
   background-color: #d7d7d7 !important;
 }
+
+#mailing-list .row {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.mailing-list-input {
+  margin-bottom: 20px !important;
+}
+
+.mailing-list-button {
+  margin-top: 0 !important;
+}
+
+.mailing-list-button:hover {
+  color: #555 !important;
+}
