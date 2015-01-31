@@ -18,5 +18,10 @@ get '/' do
 end
 
 post '/' do
-  Email.create(address: params[:email])
+  if params[:email] == ''
+    status 406
+  else
+    Email.create(address: params[:email])
+    params[:email]
+  end
 end
