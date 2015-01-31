@@ -11,6 +11,8 @@ end
 
 set :protection, except: :frame_options
 
+class Email < ActiveRecord::Base; end
+
 get '/' do
   send_file 'views/index.html'
 end
