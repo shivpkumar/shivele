@@ -339,3 +339,76 @@ a.registry {
   text-align: center;
   font-size: 1.5em;
 }
+
+.team-block .marriott {
+  width: 165px;
+  height: 165px;
+  border-radius: 50%;
+  margin: 0 auto;
+  text-align: center;
+  color: #FFF;
+  border: 1px solid #21D8B4;
+  background-color: #21D8B4;
+}
+
+.team-block .marriott .block {
+  margin: 10px;
+}
+
+.team-block .marriott .block .use-code {
+  margin: 15px 0 5px 0;
+}
+
+.team-block .marriott .block .code {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0;
+}
+
+.team-block .marriott .block .or {
+  margin: 5px 0;
+}
+
+.team-block .marriott .block .code-description {
+  font-size: 10px;
+  margin: 0;
+}
+
+.marriott-container {
+  height: 292px;
+}
+
+.marriott-container .name-team, .marriott-container .team-footer {
+  position: relative;
+  top: 165px;
+}
+
+/* FLIPPER */
+
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+  transform: rotateY(180deg);
+}
+
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  width: 165px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.front, .back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0px;
+}
+
+.front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+.back {
+  transform: rotateY(180deg);
+}
