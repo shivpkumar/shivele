@@ -13,13 +13,4 @@ $(document).ready(function(){
       }
     });
   });
-
-  $('.marriott-container .team-footer').hover(
-    function() {
-      $('.marriott-container').addClass('flip-container');
-    },
-    function() {
-      $('.marriott-container').removeClass('flip-container');
-    }
-  );
 });
