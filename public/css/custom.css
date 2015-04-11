@@ -283,6 +283,10 @@ a.book:hover{
 }
 
 #plan2 .planContainer .photo {
+  background-image: url(../images/registry/thailand.jpg);
+}
+
+#plan3 .planContainer .photo {
   background-image: url(../images/registry/gift.jpg);
 }
 
@@ -312,10 +316,6 @@ a.disabled, a.disabled:hover {
   background-color: #7e7e7e;
   pointer-events: none;
   cursor: default;
-}
-
-a.registry {
-  background-color: #d7d7d7 !important;
 }
 
 #mailing-list .row {
